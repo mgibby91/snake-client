@@ -26,6 +26,10 @@ const handleUserInput = function(key) {
     connection.write('Move: right');
   }
 
+  if (key === 'q') {
+    connection.write('Say: Sup y\'all');
+  }
+
   if (key === '\u0003') {
     process.exit();
   }
